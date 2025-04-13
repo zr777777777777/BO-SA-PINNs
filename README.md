@@ -9,3 +9,4 @@ BO-SA-PINNs' core changes compared to PINNs is outlined below:
 3. We propose global self-adaptive mechanisms including EMA and RAR-D: EMA is for adjusting loss function weights and RAR-D is for adjusting sampling points distribution;
 
 4. We have verified BO-SA-PINNs on various benchmarks including Helmholtz, Burgers and high-dimensonal Poisson, and we will share the rest of the code after the paper is published.
+
