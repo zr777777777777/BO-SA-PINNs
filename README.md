@@ -10,3 +10,4 @@ BO-SA-PINNs' core changes compared to PINNs is outlined below:
 
 4. We have verified BO-SA-PINNs on various benchmarks including Helmholtz, Burgers and high-dimensonal Poisson, and we will share the rest of the code after the paper is published.
 
+You can refer to our paper on https://arxiv.org/abs/2504.09804.
