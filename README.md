@@ -2,12 +2,7 @@ Maxwell.py is a program that solves Maxwell equations for 2D inhomogeneous or ho
 
 BO-SA-PINNs' core changes compared to PINNs is outlined below:
 
-1. A hyperparameter search space is proposed based on various experiments and we employ Bayesian optimization to select suitable hyperparameters based on PDEs;
-
-2. A new activation functon--TG is proposed which is suitable for PINNs;
-
-3. We propose global self-adaptive mechanisms including EMA and RAR-D: EMA is for adjusting loss function weights and RAR-D is for adjusting sampling points distribution;
-
-4. We have verified BO-SA-PINNs on various benchmarks including Helmholtz, Burgers and high-dimensonal Poisson, and we will share the rest of the code after the paper is published.
-
-You can refer to our paper on https://arxiv.org/abs/2504.09804.
+\item We propose a general multi-stage framework—BO-SA-PINNs—which uses Bayesian Optimization (BO) to automatically determine the optimal network architecture, learning rate, initial sampling points distribution and loss function weights for PINNs based on pre-training;
+\item We introduce a global self-adaptive mechanism. We propose a dynamic gradient-enhanced loss balancing (DGELB) method to optimize the loss function weights and an error-based adaptive refinement with distribution (EAR-D) strategy to optimize the distribution of sampling points based on the loss and gradient information of the second stage;
+\item We propose a new activation function suitable for BO-SA-PINNs;
+\item We have verified the effectiveness of BO-SA-PINNs on 1D viscous Burgers equation, 1D Diffusion equation, 2D Helmholtz equation and high-dimensional Poisson equation, achieving higher accuracy with lower cost compared to existing methods.
